@@ -198,7 +198,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "GRAVE_TILDE";
             #binding-cells = <0>;
-            bindings = <&kp LT_GRAVE >, <&kp LT_TILDE >;
+            bindings = <&kp LT_GRAV >, <&kp LT_TILDE >;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
