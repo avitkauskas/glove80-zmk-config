@@ -1,4 +1,3 @@
-
 /*
  * Copyright (c) 2020 The ZMK Contributors
  * Copyright (c) 2022 Innaworks Development Limited, trading as MoErgo
@@ -104,6 +103,125 @@
 
     /* Custom Defined Behaviors */
 
+    behaviors {
+        fbslash: forward_backward_slash {
+            compatible = "zmk,behavior-mod-morph";
+            label = "FORWARD_BACKWARD_SLASH";
+            #binding-cells = <0>;
+            bindings = <&kp LT_FSLH >, <&kp LT_BSLH >;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+
+    behaviors {
+        n3hash: n3_hash {
+            compatible = "zmk,behavior-mod-morph";
+            label = "N3_HASH";
+            #binding-cells = <0>;
+            bindings = <&kp LT_N3 >, <&kp LT_HASH >;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+
+    behaviors {
+        n4dollar: n4_dollar {
+            compatible = "zmk,behavior-mod-morph";
+            label = "N4_DOLLAR";
+            #binding-cells = <0>;
+            bindings = <&kp LT_N4 >, <&kp LT_DOLLAR >;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+
+    behaviors {
+        n5percent: n5_percent {
+            compatible = "zmk,behavior-mod-morph";
+            label = "N5_PERCENT";
+            #binding-cells = <0>;
+            bindings = <&kp LT_N5 >, <&kp LT_PERCENT >;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+
+    behaviors {
+        n6caret: n6_caret {
+            compatible = "zmk,behavior-mod-morph";
+            label = "N6_CARET";
+            #binding-cells = <0>;
+            bindings = <&kp LT_N6 >, <&kp LT_CARET >;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+
+    behaviors {
+        n7amps: n7_amps {
+            compatible = "zmk,behavior-mod-morph";
+            label = "N7_AMPS";
+            #binding-cells = <0>;
+            bindings = <&kp LT_N7 >, <&kp LT_AMPS >;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+
+    behaviors {
+        n8pipe: n8_pipe {
+            compatible = "zmk,behavior-mod-morph";
+            label = "N8_PIPE";
+            #binding-cells = <0>;
+            bindings = <&kp LT_N8 >, <&kp LT_PIPE >;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+
+    behaviors {
+        n9euro: n9_euro {
+            compatible = "zmk,behavior-mod-morph";
+            label = "N9_EURO";
+            #binding-cells = <0>;
+            bindings = <&kp LT_N9 >, <&kp LT_EURO >;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+
+    behaviors {
+        n0qmark: n0_qmark {
+            compatible = "zmk,behavior-mod-morph";
+            label = "N0_QMARK";
+            #binding-cells = <0>;
+            bindings = <&kp LT_N0 >, <&kp LT_QMARK >;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+
+    behaviors {
+        gravetilde: grave_tilde {
+            compatible = "zmk,behavior-mod-morph";
+            label = "GRAVE_TILDE";
+            #binding-cells = <0>;
+            bindings = <&kp LT_GRAVE >, <&kp LT_TILDE >;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+
+    behaviors {
+        lbktbrc: lbkt_lbrc {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LBKT_LBRC";
+            #binding-cells = <0>;
+            bindings = <&kp LT_LBKT >, <&kp LT_LBRC >;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+
+    behaviors {
+        rbktbrc: rbkt_rbrc {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RBKT_RBRC";
+            #binding-cells = <0>;
+            bindings = <&kp LT_RBKT >, <&kp LT_RBRC >;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
 
     /* Automatically generated keymap */
     keymap {
@@ -112,12 +230,12 @@
 
         base_layer {
             bindings = <
-     &kp F1    &kp F2   &kp F3    &kp F4     &kp F5                                                                                  &kp F6     &kp F7    &kp F8    &kp F9    &kp F10
-  &kp EQUAL    &kp N1   &kp N2    &kp N3     &kp N4  &kp N5                                                                  &kp N6  &kp N7     &kp N8    &kp N9    &kp N0  &kp MINUS
-    &kp TAB     &kp Q    &kp W     &kp E      &kp R   &kp T                                                                   &kp Y   &kp U      &kp I     &kp O     &kp P   &kp BSLH
-    &kp ESC     &kp A    &kp S     &kp D      &kp F   &kp G                                                                   &kp H   &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
-  &kp GRAVE     &kp Z    &kp X     &kp C      &kp V   &kp B  &kp LSHFT  &kp LCTRL    &lower  &kp LGUI  &kp RCTRL  &kp RSHFT   &kp N   &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp PG_UP
- &magic 2 0  &kp HOME  &kp END  &kp LEFT  &kp RIGHT           &kp BSPC    &kp DEL  &kp LALT  &kp RALT    &kp RET  &kp SPACE          &kp UP   &kp DOWN  &kp LBKT  &kp RBKT  &kp PG_DN
+     &lower  &kp LT_STAR  &fbslash   &kp LT_PLUS  &kp LT_MINUS                                                                                        &kp LEFT  &kp DOWN      &kp UP      &kp RIGHT    &kp LT_EQUAL
+   &kp CAPS  &kp LT_N1    &kp LT_N2  &n3hash      &n4dollar     &n5percent                                                                  &n6caret  &n7amps   &n8pipe       &n9euro     &n0qmark     &kp LT_UMAC
+&kp LT_IOGO  &kp LT_Q     &kp LT_W   &kp LT_D     &kp LT_P      &kp LT_F                                                                    &kp LT_J  &kp LT_L  &kp LT_U      &kp LT_Y    &kp LT_SCAR  &kp LT_ZCAR
+   &kp BSPC  &kp LT_A     &kp LT_R   &kp LT_S     &kp LT_T      &kp LT_G                                                                    &kp LT_K  &kp LT_N  &kp LT_E      &kp LT_I    &kp LT_O     &kp LT_UOGO
+&kp LT_AOGO  &kp LT_Z     &kp LT_X   &kp LT_C     &kp LT_V      &kp LT_B    &kp LSHFT  &kp LGUI  &kp LCTRL  &kp RCTRL  &kp RGUI  &kp RSHFT  &kp LT_M  &kp LT_H  &kp LT_COMMA  &kp LT_DOT  &kp LT_EDOT  &kp LT_CCAR
+&gravetilde  &kp LT_LT    &kp LT_GT  &kp LT_LPAR  &kp LT_RPAR               &kp TAB    &kp ESC   &kp LALT   &kp RALT   &kp RET   &kp SPACE            &lbktbrc  &rbktbrc      &kp LT_SQT  &kp LT_EOGO  &kp LT_UNDER
             >;
         };
 
