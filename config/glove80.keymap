@@ -231,7 +231,7 @@
 
         base_layer {
             bindings = <
-&lower       &kp LT_STAR  &fbslash   &kp LT_PLUS  &kp LT_MINUS                                                                                        &kp LEFT  &kp DOWN      &kp UP       &kp RIGHT    &kp LT_UOGO
+&lower       &kp LT_STAR  &fbslash   &kp LT_PLUS  &kp LT_MINUS                                                                                        &kp LEFT  &kp DOWN      &kp UP       &kp RIGHT    &kp LT_UMAC
 &kp LT_CCAR  &kp LT_N1    &kp LT_N2  &kp LT_N3    &kp LT_N4     &kp LT_N5                                                                   &kp LT_N6 &kp LT_N7 &kp LT_N8     &kp LT_N9    &kp LT_N0    &kp LT_ZCAR
 &kp TAB      &kp LT_Q     &kp LT_W   &kp LT_D     &kp LT_P      &kp LT_F                                                                    &kp LT_J  &kp LT_L  &kp LT_U      &kp LT_Y     &kp LT_SCAR  &kp LT_UOGO
 &kp CAPS     &kp LT_A     &kp LT_R   &kp LT_S     &kp LT_T      &kp LT_G                                                                    &kp LT_K  &kp LT_N  &kp LT_E      &kp LT_I     &kp LT_O     &kp LT_SQT
