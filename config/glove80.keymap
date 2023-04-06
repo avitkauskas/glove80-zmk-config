@@ -232,7 +232,7 @@
             label = "LPAR_LT";
             #binding-cells = <0>;
             bindings = <&kp LT_LPAR >, <&kp LT_LT >;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(MOD_LALT|MOD_RALT)>;
         };
     };
 
@@ -242,7 +242,7 @@
             label = "RPAR_GT";
             #binding-cells = <0>;
             bindings = <&kp LT_RPAR >, <&kp LT_GT >;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(MOD_LALT|MOD_RALT)>;
         };
     };
 
