@@ -232,12 +232,12 @@
 
         base_layer {
             bindings = <
-&kp ESC     &kp LT_STAR &fbslash  &kp LT_PLUS &kp LT_MINUS                                                                                                   &kp LT_LBKT &kp LT_RBKT  &kp LT_LBRC  &kp LT_RBRC &kp LT_UMAC
-&kp LT_CCAR &kp LT_N1   &kp LT_N2 &kp LT_N3   &kp LT_N4    &kp LT_N5                                                                               &kp LT_N6 &kp LT_N7   &kp LT_N8    &kp LT_N9    &kp LT_N0   &kp LT_ZCAR
-&kp TAB     &kp LT_Q    &kp LT_W  &kp LT_D    &kp LT_P     &kp LT_F                                                                                &kp LT_J  &kp LT_L    &kp LT_U     &kp LT_Y     &kp LT_SCAR &kp LT_UOGO
-&kp CAPS    &kp LT_A    &kp LT_R  &kp LT_S    &kp LT_T     &kp LT_G                                                                                &kp LT_K  &kp LT_N    &kp LT_E     &kp LT_I     &kp LT_O    &kp LT_SQT
-&kp LT_AOGO &kp LT_Z    &kp LT_X  &kp LT_C    &kp LT_V     &kp LT_B  &mt LSHFT SPACE &mt LALT ESC &kp ESC   &kp RET   &mt LALT RET &mt LSHFT SPACE &kp LT_M  &kp LT_H    &kp LT_COMMA &kp LT_DOT   &kp LT_EDOT &kp LT_IOGO
-&lower      &kp LT_LT   &kp LT_GT &kp LT_LPAR &kp LT_RPAR            &kp LGUI        &kp RALT     &kp LCTRL &kp RCTRL &kp RALT     &kp RGUI                  &kp LEFT    &kp DOWN     &kp UP       &kp RIGHT   &kp LT_EOGO
+&kp ESC     &kp LT_STAR &fbslash  &kp LT_PLUS &kp LT_MINUS                                                                                                    &kp LT_LBKT &kp LT_RBKT  &kp LT_LBRC  &kp LT_RBRC &kp LT_UMAC
+&kp LT_CCAR &kp LT_N1   &kp LT_N2 &kp LT_N3   &kp LT_N4    &kp LT_N5                                                                                &kp LT_N6 &kp LT_N7   &kp LT_N8    &kp LT_N9    &kp LT_N0   &kp LT_ZCAR
+&kp TAB     &kp LT_Q    &kp LT_W  &kp LT_D    &kp LT_P     &kp LT_F                                                                                 &kp LT_J  &kp LT_L    &kp LT_U     &kp LT_Y     &kp LT_SCAR &kp LT_UOGO
+&kp CAPS    &kp LT_A    &kp LT_R  &kp LT_S    &kp LT_T     &kp LT_G                                                                                 &kp LT_K  &kp LT_N    &kp LT_E     &kp LT_I     &kp LT_O    &kp LT_SQT
+&kp LT_AOGO &kp LT_Z    &kp LT_X  &kp LT_C    &kp LT_V     &kp LT_B  &mt LSHFT SPACE &mt LALT BSPC &kp ESC   &kp RET   &mt LALT RET &mt LSHFT SPACE &kp LT_M  &kp LT_H    &kp LT_COMMA &kp LT_DOT   &kp LT_EDOT &kp LT_IOGO
+&lower      &kp LT_LT   &kp LT_GT &kp LT_LPAR &kp LT_RPAR            &kp LGUI        &kp RALT      &kp LCTRL &kp RCTRL &kp RALT     &kp RGUI                  &kp LEFT    &kp DOWN     &kp UP       &kp RIGHT   &kp LT_EOGO
             >;
         };
 
